@@ -14,7 +14,9 @@ Tested on this setup:
 
 ## Setup 
 
-### Install [hammerspoon](https://www.hammerspoon.org/):
+### Install [hammerspoon](https://www.hammerspoon.org/)
+
+using [homebrew](https://brew.sh/)
 
 `brew install --cask hammerspoon`  
 
