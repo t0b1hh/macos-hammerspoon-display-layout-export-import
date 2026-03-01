@@ -1,6 +1,6 @@
-# macos-hammerspoon-display-layout-export-import
+# macOS display layout export/import
 
-Export and import of display arrangement using hammerspoon.
+Export and import of macOS display arrangement using hammerspoon.
 
 Tested on this setup: 
 
