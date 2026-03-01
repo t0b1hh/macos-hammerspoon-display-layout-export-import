@@ -1,2 +1,45 @@
 # macos-hammerspoon-display-layout-export-import
 Export and import of display arrangement using hammerspoon
+
+
+## Setup 
+
+### Install [hammerspoon](https://www.hammerspoon.org/):
+
+`brew install --cask hammerspoon`  
+
+see https://formulae.brew.sh/cask/hammerspoon#default
+
+
+### Script
+
+1) Place the `display_layout.lua` file inside your `~/.hammerspoon/` directory
+
+2) Add to `~/.hammerspoon/init.lua`:
+
+```lua
+require("display_layout")
+hs.hotkey.bind({"cmd", "ctrl"}, "E", exportDisplayLayout)
+hs.hotkey.bind({"cmd", "ctrl"}, "I", importDisplayLayout)
+```
+
+3) Reload hammerspoon config
+
+
+## Usage
+
+Use hotkey `cmd+ctrl+e`to export your display arrangement.
+Use hotkey `cmd+ctrl+i`to import your display arrangement.
+
+### When changing displays/connections: 
+
+You may want to go like this do move your display arrangement to a new setup:
+
+1) export => `~/.hammerspoon/display_layout.json`
+2) rename exported file to sth like `~/.hammerspoon/display_layout.1.json`
+3) change your display setup/connections
+4) export again => `~/.hammerspoon/display_layout.json`
+5) rename second exported file to sth like `~/.hammerspoon/display_layout.2.json`
+6) compare both files and create a new one. Adjust UUIDs/Values as needed
+7) save new file as `~/.hammerspoon/display_layout.json`
+8) import from the new file
