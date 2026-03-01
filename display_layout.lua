@@ -4,7 +4,7 @@
 -- Usage:
 --   place this file in ~/.hammerspoon/
 -- 
---   in init.lua add: 
+--   in ~/.hammerspoon/init.lua add: 
 --   require("display_layout")
 --   hs.hotkey.bind({"cmd","ctrl"}, "E", exportDisplayLayout)
 --   hs.hotkey.bind({"cmd","ctrl"}, "I", importDisplayLayout)
