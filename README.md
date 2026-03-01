@@ -2,6 +2,15 @@
 
 Export and import of display arrangement using hammerspoon.
 
+Tested on this setup: 
+
+- Apple M3 Pro (16", Nov. 2023) @ macOS Sequoia 15.6.1 (24G90)
+- Hammerspoon 1.1.1 (6936)
+- Displays:
+  - Internal
+  - Dell U2713HM (via display port)
+  - Dell U2713HM pivot (via display port + dvi)
+
 
 ## Setup 
 
